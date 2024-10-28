@@ -1,0 +1,179 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #00d2ff, #b7d158);
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    
+    /* Border with shades of black and a blur effect */
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    box-shadow: 
+        0 0 15px rgba(0, 0, 0, 0.6),  /* Inner glow in black */
+        0 0 30px rgba(0, 0, 0, 0.4),  /* Outer blur in darker shades */
+        0 0 60px rgba(0, 0, 0, 0.3);  /* Faint outermost blur */
+}
+
+.form-box {
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+     
+        margin-bottom: 20px;
+        font-size: 36px; /* Increase the font size for better readability */
+        color: #0a0909;
+        font-family: 'Dancing Script', cursive; /* Calligraphic font */
+        font-weight: bold;
+        letter-spacing: 1px; /* Slight letter spacing for elegance */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    }
+    
+
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid transparent; /* Default transparent border */
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+/* Thin black border on focus and hover */
+.input-group input:focus,
+.input-group input:hover {
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid #000; /* Black thin border on hover or focus */
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #00f260, #dbe605);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(90deg, #e7f70b, #00f260);
+}
+
+p {
+    margin-top: 20px;
+    color: #fff;
+}
+
+p a {
+    color: #00f260;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Background animation for live motion effect */
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background-size: 200% 200%;
+    animation: moveGradient 5s ease infinite;
+}
+
+/* Animated floating elements */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    animation: float 10s ease-in-out infinite;
+}
+
+.circle:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    top: 20%;
+    left: -10%;
+    animation-duration: 6s;
+}
+
+.circle:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    bottom: 20%;
+    right: -5%;
+    animation-duration: 8s;
+}
+
+.circle:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    right: -15%;
+    animation-duration: 10s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

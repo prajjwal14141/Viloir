@@ -1,0 +1,170 @@
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333; /* Default dark gray for body text */
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #6200ea, #ff5722); /* Bright and contrasting */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.4em;
+    margin-bottom: 25px;
+    color: #fff; /* Keep the header text white for contrast */
+}
+
+/* Button Styling */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-button, .secondary-button {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button {
+    background-color: #ff5722;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.cta-button:hover {
+    background-color: #e64a19;
+}
+
+.secondary-button {
+    background-color: #6200ea;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.secondary-button:hover {
+    background-color: #512da8;
+}
+
+/* Sections Styling: Features, Testimonials, How It Works */
+.features, .testimonials, .how-it-works {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #e3e3e3); /* Gradient background for sections */
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #333; /* Dark gray for headings */
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+/* Feature Items Styling */
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    flex: 1;
+    margin: 10px;
+    padding: 25px;
+    border: 1px solid #aaa; /* Light gray borders */
+    border-radius: 15px;
+    background: linear-gradient(135deg, #727272, #3c3c3c); /* Gradient background */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: #fff; /* Light text for dark background */
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #050505, #333); /* Darker gradient on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Blockquote Styling */
+blockquote {
+    font-style: italic;
+    margin: 30px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #032238, #3c8bc0); /* Gradient background */
+    border-radius: 10px;
+    color: #fff; /* Light text for blockquote */
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.how-it-works {
+    background: linear-gradient(135deg, #ff7979, #cf9d28);
+    border-radius: 5px;
+
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #6200ea;
+    color: white;
+    position: relative;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #ffeb3b;
+}
+
+footer .social-media {
+    margin-top: 15px;
+}
+
+footer .social-media img {
+    width: 30px; 
+    margin: 0 10px;
+    transition: filter 0.3s ease;
+}
+
+footer .social-media img:hover {
+    filter: brightness(1.2); 
+}
